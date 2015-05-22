@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.pc.mhealth.fragments.EntrenamientoFragment">
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/imagenEntrenamiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/entrenamiento"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/fecha"
+        android:layout_below="@+id/imagenEntrenamiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Junio 8,9 y 19"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:textColor="#ffff6129"/>
+
+   <TextView
+       android:id="@+id/informacionEntrenamiento"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/InformacionEntrenamiento"
+       android:layout_below="@id/fecha"
+       android:textSize="@dimen/tamañoInformacion"
+       android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/link_entrenamiento"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/informacionEntrenamiento"
+        android:textColor="#ffff6129"
+        android:textSize="20sp"
+        android:linksClickable="true"
+        android:autoLink="all"
+        android:text="@string/link_inscripciones_entrenamiento"
+        />
+
+
+
+
+</RelativeLayout>
