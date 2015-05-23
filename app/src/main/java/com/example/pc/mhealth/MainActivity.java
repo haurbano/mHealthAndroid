@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -26,28 +27,32 @@ import com.example.pc.mhealth.fragments.InformacionFragment;
 import com.example.pc.mhealth.fragments.MapaFragment;
 import com.example.pc.mhealth.fragments.NoticiasFragment;
 import com.example.pc.mhealth.fragments.SponsorsFragment;
-import com.google.android.gms.maps.SupportMapFragment;
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+import io.fabric.sdk.android.Fabric;
 
 
 public class MainActivity extends ActionBarActivity implements DrawerLayout.DrawerListener {
 
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "IB9c9tzBix4FGvJlTfzac2Iqb";
+    private static final String TWITTER_SECRET = "7c3kpp4jOmdDglGew7HDvm7Xu1Y7A82lr8Qpod4OCBucMyDu53";
+
+
     private ListView navList;
     public String[] opciones;
     DrawerLayout drawer;
-
     private ActionBarDrawerToggle toggle;
 
-    //para el pager
-    ViewPager pager;
-    ActionBar actionBar;
 
-    //Links de Incripsiones
-    TextView insc_entrenamiento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+        Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_main);
+
         //region Drawer
 
         this.navList = (ListView) findViewById(R.id.left_drawer);//Obtenemos el ListView desde el xml que fuciona como el menu drawer
@@ -76,7 +81,8 @@ public class MainActivity extends ActionBarActivity implements DrawerLayout.Draw
         getSupportActionBar().setHomeButtonEnabled(true);
         //endregion
 
-       insc_entrenamiento = (TextView) findViewById(R.id.link_entrenamiento);
+
+
     }
 
 

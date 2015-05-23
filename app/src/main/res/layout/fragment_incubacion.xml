@@ -19,18 +19,5 @@
         android:textSize="@dimen/tamañoInformacion"
         android:gravity="center"/>
 
-    <TextView
-        android:id="@+id/link_hackaton"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/informacionHackaton"
-        android:textColor="#ffff6b44"
-        android:textSize="20sp"
-        android:linksClickable="true"
-        android:autoLink="all"
-        android:text="@string/link_inscripciones_Incubacion"
-        />
 
 </RelativeLayout>

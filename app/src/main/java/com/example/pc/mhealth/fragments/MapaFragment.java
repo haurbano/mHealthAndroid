@@ -1,23 +1,17 @@
 package com.example.pc.mhealth.fragments;
 
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.support.v4.app.Fragment;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-
 import com.example.pc.mhealth.R;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
-import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
@@ -29,8 +23,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapaFragment extends Fragment {
 
     SupportMapFragment map_fragment;
-    GoogleMapOptions options;
-    CameraPosition position;
     LatLng posi;
 
     GoogleMap googleMap;

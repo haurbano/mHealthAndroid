@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <TextView
+        android:textColor="#ffff5422"
+        android:textSize="@dimen/TamañoTiulos"
+        android:text="Contacto"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txt_contenido"
+        android:layout_marginTop="30dp"
+        android:hint="Contenido del mensaje"
+        android:scrollbars="vertical"
+        android:maxLines="4"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txt_nombre"
+        android:layout_marginTop="15dp"
+        android:hint="Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_enviarcorreo"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Contacto desde fragment"/>
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:text="Enviar"/>
+</LinearLayout>

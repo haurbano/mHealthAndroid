@@ -9,7 +9,7 @@
     <string-array name="list_drawer">
         <item>Actividades</item>
         <item>Informacion</item>
-        <item>Sponsors</item>
+        <item>Patrocinadores</item>
         <item>Noticias</item>
         <item>Mapa</item>
         <item>Contacto</item>
@@ -44,12 +44,9 @@
                                 Mobile Lab Colombia apoyando la creación de contenidos digitales para dispositivos
                                 móviles.</string>
 
-    <!--LINKS-->
-    <string name="link_inscripciones_entrenamiento">Incribete aqui! <b href="http://google.com?id=google">  </b> http://google.com </string>
-    <string name="link_inscripciones_hackaton">Incribete aqui! <b href="http://google.com?id=google">  </b> http://google.com </string>
-    <string name="link_inscripciones_curso_sana">Incribete aqui! <b href="http://google.com?id=google">  </b> http://google.com </string>
-    <string name="link_inscripciones_Incubacion">Incribete aqui! <b href="http://google.com?id=google">  </b> http://google.com </string>
-    <string name="Sponsor_title">Sponsors</string>
+
+    <string name="Sponsor_title">Patrocinadores</string>
+    <string name="aliados_title">Aliados</string>
 
 
 </resources>

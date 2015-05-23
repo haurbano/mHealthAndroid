@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 
     <TextView
         android:gravity="center"
@@ -9,35 +11,93 @@
         android:layout_height="wrap_content"
         android:text="@string/Sponsor_title"
         android:textColor="#ffff5b2e"
-        android:textSize="@dimen/TamañoTiulos"/>
-    <LinearLayout
+        android:textSize="@dimen/TamañoTiulos"
+        />
+    <TableRow
         android:layout_below="@id/titulo"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
+
         <ImageView
+            android:id="@+id/img_cauca"
+            android:padding="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:src="@drawable/cauca"/>
         <ImageView
+            android:id="@+id/img_cluster"
+            android:padding="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:src="@drawable/cluster"/>
         <ImageView
+            android:id="@+id/img_microsoft"
+            android:padding="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/microsoft"/>
+            android:layout_height="100dp"
+            android:src="@drawable/micro"/>
         <ImageView
+            android:id="@+id/img_nucleos"
+            android:padding="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:src="@drawable/nucleo"/>
+        <ImageView
+            android:id="@+id/img_unicauca"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@drawable/unicauca"/>
+        </TableRow>
 
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
 
-        </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/aliados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aliados_title"
+        android:textColor="#ffff5b2e"
+        android:textSize="@dimen/TamañoTiulos"
+        />
 
-</RelativeLayout>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <ImageView
+            android:id="@+id/img_acopi"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@drawable/acopi"/>
+        <ImageView
+            android:id="@+id/img_sanjose"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sj"/>
+
+        <ImageView
+            android:id="@+id/img_susana"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@drawable/susana"/>
+    </TableRow>
+
+</TableLayout>

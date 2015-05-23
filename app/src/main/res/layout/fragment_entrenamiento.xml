@@ -15,7 +15,7 @@
         android:layout_below="@+id/imagenEntrenamiento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Junio 8,9 y 19"
+        android:text="Junio 8,9 y 10"
         android:textSize="30dp"
         android:padding="10dp"
         android:textColor="#ffff6129"/>
@@ -30,17 +30,14 @@
        android:gravity="center"/>
 
     <TextView
+        android:gravity="center"
+        android:textColor="#ffff6534"
+        android:textSize="@dimen/tamañoInformacion"
         android:id="@+id/link_entrenamiento"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:layout_below="@+id/informacionEntrenamiento"
-        android:textColor="#ffff6129"
-        android:textSize="20sp"
-        android:linksClickable="true"
-        android:autoLink="all"
-        android:text="@string/link_inscripciones_entrenamiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
         />
 
 

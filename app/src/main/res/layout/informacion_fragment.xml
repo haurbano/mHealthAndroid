@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/InformacionSana"
-            android:textSize="@dimen/tamañoInformacion"/>
+            android:textSize="17sp"/>
 
         <ImageView
             android:padding="5dp"
@@ -61,7 +61,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/InformacionMhealth"
-            android:textSize="@dimen/tamañoInformacion"/>
+            android:textSize="17sp"/>
     </LinearLayout>
 
 
