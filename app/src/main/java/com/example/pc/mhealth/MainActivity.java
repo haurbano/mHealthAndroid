@@ -1,15 +1,11 @@
 package com.example.pc.mhealth;
 
-
-import android.app.ActionBar;
 import android.content.res.Configuration;
 
 
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -17,10 +13,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
-
+import android.app.ListFragment;
 import com.example.pc.mhealth.fragments.ActividadesFragment;
 import com.example.pc.mhealth.fragments.ContactoFragment;
 import com.example.pc.mhealth.fragments.InformacionFragment;
