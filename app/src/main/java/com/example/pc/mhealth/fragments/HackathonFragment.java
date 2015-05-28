@@ -23,7 +23,7 @@ public class HackathonFragment extends TitleFragment {
         View v = inflater.inflate(R.layout.fragment_hackathon, container, false);
         link_hackaton = (TextView) v.findViewById(R.id.link_hackaton);
         link_hackaton.setMovementMethod(LinkMovementMethod.getInstance());
-        link_hackaton.setText(Html.fromHtml("<a href='https://onedrive.live.com/survey?resid=BF82224653124AC1!124&authkey=!ANpkDgR-_7WF-Wg'>Incríbete aquí!</a>"));
+        link_hackaton.setText(Html.fromHtml("<a href='https://onedrive.live.com/survey?resid=BF82224653124AC1!124&authkey=!ANpkDgR-_7WF-Wg' style='color:#ffffff; background-color:#ff6534;text-decoration:none;padding:3% 5% 3% 5%'>Incríbete aquí!</a>"));
         return v;
     }
 

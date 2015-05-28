@@ -26,7 +26,7 @@ private final String title = "Entrenamiento";
         View v = inflater.inflate(R.layout.fragment_entrenamiento, container, false);
         link_entrenamiento = (TextView) v.findViewById(R.id.link_entrenamiento);
         link_entrenamiento.setMovementMethod(LinkMovementMethod.getInstance());
-        link_entrenamiento.setText(Html.fromHtml("<a href='https://onedrive.live.com/survey?resid=BF82224653124AC1!122&authkey=!AIR19HZ24GnS8CM'>Incríbete aquí!</a>"));
+        link_entrenamiento.setText(Html.fromHtml("<a href='https://onedrive.live.com/survey?resid=BF82224653124AC1!122&authkey=!AIR19HZ24GnS8CM' style='color:#ffffff; background-color:#ff6534;text-decoration:none;padding:3% 5% 3% 5%'>Incríbete aquí!</a>"));
         return v;
     }
 

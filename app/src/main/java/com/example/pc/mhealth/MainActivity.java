@@ -3,10 +3,12 @@ package com.example.pc.mhealth;
 import android.content.res.Configuration;
 
 
-
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -17,6 +19,7 @@ import android.widget.ListView;
 import android.app.ListFragment;
 import com.example.pc.mhealth.fragments.ActividadesFragment;
 import com.example.pc.mhealth.fragments.ContactoFragment;
+import com.example.pc.mhealth.fragments.HomeFragment;
 import com.example.pc.mhealth.fragments.InformacionFragment;
 import com.example.pc.mhealth.fragments.MapaFragment;
 import com.example.pc.mhealth.fragments.NoticiasFragment;
@@ -33,6 +36,8 @@ public class MainActivity extends ActionBarActivity implements DrawerLayout.Draw
     private static final String TWITTER_SECRET = "7c3kpp4jOmdDglGew7HDvm7Xu1Y7A82lr8Qpod4OCBucMyDu53";
 
 
+
+
     private ListView navList;
     public String[] opciones;
     DrawerLayout drawer;
@@ -46,6 +51,9 @@ public class MainActivity extends ActionBarActivity implements DrawerLayout.Draw
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
         Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_main);
+
+
+
 
         //region Drawer
 
@@ -74,6 +82,11 @@ public class MainActivity extends ActionBarActivity implements DrawerLayout.Draw
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         //endregion
+
+        HomeFragment home = new HomeFragment();
+        FragmentTransaction transaction0 =getSupportFragmentManager().beginTransaction();
+        transaction0.replace(R.id.content_frame,home);
+        transaction0.commit();
 
 
 
@@ -132,36 +145,42 @@ public class MainActivity extends ActionBarActivity implements DrawerLayout.Draw
 
             switch (i){
                 case 0:
+                    HomeFragment home = new HomeFragment();
+                    FragmentTransaction transaction0 =getSupportFragmentManager().beginTransaction();
+                    transaction0.replace(R.id.content_frame,home);
+                    transaction0.commit();
+                    break;
+                case 1:
                     ActividadesFragment actividades = new ActividadesFragment();
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                     transaction.replace(R.id.content_frame,actividades);
                     transaction.commit();
                     break;
-                case 1:
+                case 2:
                     InformacionFragment informacion = new InformacionFragment();
                     FragmentTransaction transacion1 = getSupportFragmentManager().beginTransaction();
                     transacion1.replace(R.id.content_frame,informacion);
                     transacion1.commit();
                     break;
-                case 2:
+                case 3:
                      SponsorsFragment sponsors = new SponsorsFragment();
                     FragmentTransaction transacion2 = getSupportFragmentManager().beginTransaction();
                     transacion2.replace(R.id.content_frame,sponsors);
                     transacion2.commit();
                     break;
-                case 3:
+                case 4:
                     NoticiasFragment noticias = new NoticiasFragment();
                     FragmentTransaction transaction3 = getSupportFragmentManager().beginTransaction();
                     transaction3.replace(R.id.content_frame,noticias);
                     transaction3.commit();
                     break;
-                case 4:
+                case 5:
                     MapaFragment mapa = new MapaFragment();
                     FragmentTransaction transaction4 = getSupportFragmentManager().beginTransaction();
                     transaction4.replace(R.id.content_frame,mapa);
                     transaction4.commit();
                     break;
-                case 5:
+                case 6:
                     ContactoFragment contacto = new ContactoFragment();
                     FragmentTransaction transaction5 = getSupportFragmentManager().beginTransaction();
                     transaction5.replace(R.id.content_frame,contacto);

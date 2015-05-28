@@ -21,9 +21,9 @@ public class NoticiasFragment extends ListFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        final UserTimeline userTimeline = new UserTimeline.Builder().screenName("Ha_Urbano").build();
-        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(getActivity(),userTimeline);
-                setListAdapter(adapter);
+        final UserTimeline userTimeline = new UserTimeline.Builder().screenName("ClusterCreaTIC").build();
+        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(getActivity(), userTimeline);
+        setListAdapter(adapter);
     }
 
     @Override

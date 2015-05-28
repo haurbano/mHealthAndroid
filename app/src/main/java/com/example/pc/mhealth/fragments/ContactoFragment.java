@@ -48,9 +48,9 @@ public class ContactoFragment extends Fragment implements View.OnClickListener {
             startActivity(intent);
             nom.setText(" ");
             contenido.setText(" ");
-            Toast.makeText(getActivity(),"Mensaje enviado",Toast.LENGTH_SHORT);
+            Toast.makeText(getActivity(),"Mensaje enviado",Toast.LENGTH_SHORT).show();
         }catch (Exception exp){
-            Toast.makeText(getActivity(),"No se pudo enviar el correo",Toast.LENGTH_SHORT);
+            Toast.makeText(getActivity(),"No se pudo enviar el correo",Toast.LENGTH_SHORT).show();
         }
     }
 }

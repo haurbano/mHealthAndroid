@@ -8,7 +8,7 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:textColor="#ffffff"
-      android:background="#333333"
-      android:padding="10dp" />
+      android:background="#ffff6129"
+      android:padding="15dp" />
 
 </android.support.v4.view.ViewPager>

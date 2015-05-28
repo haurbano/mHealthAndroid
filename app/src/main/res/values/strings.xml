@@ -7,8 +7,9 @@
     <string name="drawer_close">El menu lateral se cerro</string>
 
     <string-array name="list_drawer">
+        <item>Inicio</item>
         <item>Actividades</item>
-        <item>Informacion</item>
+        <item>Información</item>
         <item>Patrocinadores</item>
         <item>Noticias</item>
         <item>Mapa</item>
