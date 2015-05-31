@@ -87,16 +87,7 @@ public class SponsorsFragment extends Fragment implements View.OnClickListener {
                 intent.setData(Uri.parse("http://www.hosusana.gov.co"));
                 startActivity(intent);
                 break;
-            case R.id.img_silver:
-                //FragmentTransaction fm = getChildFragmentManager();
-                break;
-            case R.id.img_gold:
-                break;
-            case R.id.img_platinium:
-
-                break;
-
-            default:
+           default:
                 intent.setData(Uri.parse("http://google.com"));
                 startActivity(intent);
                 break;

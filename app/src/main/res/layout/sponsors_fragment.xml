@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/header"
         android:layout_width="fill_parent"
-        android:layout_height="115dp"
+        android:layout_height="80dp"
         android:src="@drawable/headershort"
         android:background="@drawable/headershort"/>
 
@@ -22,7 +22,7 @@
         android:text="Patrocinadores"
         android:textSize="@dimen/TamañoTiulos"
         android:textColor="#ffffff"
-        android:layout_marginTop="-70dp"
+        android:layout_marginTop="-60dp"
         />
 
     <TableRow
@@ -71,30 +71,32 @@
 
 
 
+    <ImageView
+        android:id="@+id/header1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/headershort"
+        android:background="@drawable/headershort"/>
+
     <TextView
+        android:id="@+id/titulo1"
         android:gravity="center"
-        android:id="@+id/aliados"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/aliados_title"
-        android:textColor="#ffff5b2e"
+        android:text="Aliados"
         android:textSize="@dimen/TamañoTiulos"
+        android:textColor="#ffffff"
+        android:layout_marginTop="-60dp"
         />
-
-    <View
-        android:id="@+id/div"
-        android:layout_width="fill_parent"
-        android:layout_height="2dp"
-        android:background="#ffff6129"
-        android:layout_margin="10dp"/>
-
 
 
 
 
     <TableRow
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
         <ImageView
             android:id="@+id/img_acopi"
             android:padding="10dp"
@@ -121,53 +123,11 @@
     </TableRow>
 
 
-    <TextView
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:id="@+id/senuestro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="¡Se nuestro aliado!"
-        android:textColor="#ffff5b2e"
-        android:textSize="@dimen/TamañoTiulos"
-        />
 
-    <View
-        android:id="@+id/div2"
-        android:layout_width="fill_parent"
-        android:layout_height="2dp"
-        android:background="#ffff6129"
-        android:layout_margin="10dp"/>
 
-    <TableRow
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-        <ImageView
-            android:id="@+id/img_silver"
-            android:padding="10dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:clickable="true"
-            android:src="@drawable/silver"/>
-        <ImageView
-            android:id="@+id/img_gold"
-            android:padding="10dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:clickable="true"
-            android:src="@drawable/golden"/>
 
-        <ImageView
-            android:id="@+id/img_platinium"
-            android:padding="10dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:clickable="true"
-            android:src="@drawable/platinium"/>
-    </TableRow>
+
+
 
 
 

@@ -3,12 +3,9 @@ package com.example.pc.mhealth;
 import android.content.res.Configuration;
 
 
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -16,13 +13,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.app.ListFragment;
+
 import com.example.pc.mhealth.fragments.ActividadesFragment;
 import com.example.pc.mhealth.fragments.ContactoFragment;
+import com.example.pc.mhealth.fragments.ExpertosFragment;
 import com.example.pc.mhealth.fragments.HomeFragment;
 import com.example.pc.mhealth.fragments.InformacionFragment;
 import com.example.pc.mhealth.fragments.MapaFragment;
 import com.example.pc.mhealth.fragments.NoticiasFragment;
+import com.example.pc.mhealth.fragments.PremiosFragment;
 import com.example.pc.mhealth.fragments.SponsorsFragment;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
@@ -162,25 +161,37 @@ public class MainActivity extends ActionBarActivity implements DrawerLayout.Draw
                     transacion1.replace(R.id.content_frame,informacion);
                     transacion1.commit();
                     break;
-                case 3:
+                case 4:
                      SponsorsFragment sponsors = new SponsorsFragment();
                     FragmentTransaction transacion2 = getSupportFragmentManager().beginTransaction();
                     transacion2.replace(R.id.content_frame,sponsors);
                     transacion2.commit();
                     break;
-                case 4:
+                case 3:
+                    ExpertosFragment expertos = new ExpertosFragment();
+                    FragmentTransaction transacion7 = getSupportFragmentManager().beginTransaction();
+                    transacion7.replace(R.id.content_frame,expertos);
+                    transacion7.commit();
+                    break;
+                case 5:
                     NoticiasFragment noticias = new NoticiasFragment();
                     FragmentTransaction transaction3 = getSupportFragmentManager().beginTransaction();
                     transaction3.replace(R.id.content_frame,noticias);
                     transaction3.commit();
                     break;
-                case 5:
+                case 6:
+                    PremiosFragment premiosFragment = new PremiosFragment();
+                    FragmentTransaction transaction8 = getSupportFragmentManager().beginTransaction();
+                    transaction8.replace(R.id.content_frame,premiosFragment);
+                    transaction8.commit();
+                    break;
+                case 7:
                     MapaFragment mapa = new MapaFragment();
                     FragmentTransaction transaction4 = getSupportFragmentManager().beginTransaction();
                     transaction4.replace(R.id.content_frame,mapa);
                     transaction4.commit();
                     break;
-                case 6:
+                case 8:
                     ContactoFragment contacto = new ContactoFragment();
                     FragmentTransaction transaction5 = getSupportFragmentManager().beginTransaction();
                     transaction5.replace(R.id.content_frame,contacto);
