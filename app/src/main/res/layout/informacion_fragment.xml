@@ -43,6 +43,7 @@
             android:src="@drawable/sanalogo"/>
 
         <TextView
+            android:textColor="#d2000000"
             android:paddingRight="10dp"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -80,6 +81,7 @@
             />
 
         <TextView
+            android:textColor="#d2000000"
             android:paddingRight="10dp"
             android:layout_width="0dp"
             android:layout_weight="1"

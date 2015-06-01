@@ -29,6 +29,7 @@
         android:paddingBottom="30dp"/>
 
     <TextView
+        android:textColor="#d2000000"
         android:id="@+id/intro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

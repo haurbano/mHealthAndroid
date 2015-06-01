@@ -143,55 +143,55 @@ public class MainActivity extends ActionBarActivity implements DrawerLayout.Draw
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
             switch (i){
-                case 0:
+                case 1:
                     HomeFragment home = new HomeFragment();
                     FragmentTransaction transaction0 =getSupportFragmentManager().beginTransaction();
                     transaction0.replace(R.id.content_frame,home);
                     transaction0.commit();
                     break;
-                case 1:
+                case 2:
                     ActividadesFragment actividades = new ActividadesFragment();
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                     transaction.replace(R.id.content_frame,actividades);
                     transaction.commit();
                     break;
-                case 2:
+                case 3:
                     InformacionFragment informacion = new InformacionFragment();
                     FragmentTransaction transacion1 = getSupportFragmentManager().beginTransaction();
                     transacion1.replace(R.id.content_frame,informacion);
                     transacion1.commit();
                     break;
-                case 4:
+                case 5:
                      SponsorsFragment sponsors = new SponsorsFragment();
                     FragmentTransaction transacion2 = getSupportFragmentManager().beginTransaction();
                     transacion2.replace(R.id.content_frame,sponsors);
                     transacion2.commit();
                     break;
-                case 3:
+                case 4:
                     ExpertosFragment expertos = new ExpertosFragment();
                     FragmentTransaction transacion7 = getSupportFragmentManager().beginTransaction();
                     transacion7.replace(R.id.content_frame,expertos);
                     transacion7.commit();
                     break;
-                case 5:
+                case 6:
                     NoticiasFragment noticias = new NoticiasFragment();
                     FragmentTransaction transaction3 = getSupportFragmentManager().beginTransaction();
                     transaction3.replace(R.id.content_frame,noticias);
                     transaction3.commit();
                     break;
-                case 6:
+                case 7:
                     PremiosFragment premiosFragment = new PremiosFragment();
                     FragmentTransaction transaction8 = getSupportFragmentManager().beginTransaction();
                     transaction8.replace(R.id.content_frame,premiosFragment);
                     transaction8.commit();
                     break;
-                case 7:
+                case 8:
                     MapaFragment mapa = new MapaFragment();
                     FragmentTransaction transaction4 = getSupportFragmentManager().beginTransaction();
                     transaction4.replace(R.id.content_frame,mapa);
                     transaction4.commit();
                     break;
-                case 8:
+                case 9:
                     ContactoFragment contacto = new ContactoFragment();
                     FragmentTransaction transaction5 = getSupportFragmentManager().beginTransaction();
                     transaction5.replace(R.id.content_frame,contacto);

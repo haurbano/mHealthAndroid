@@ -22,6 +22,7 @@
             />
 
         <TextView
+            android:textColor="#d2000000"
             android:padding="10dp"
             android:gravity="center"
             android:layout_width="match_parent"
